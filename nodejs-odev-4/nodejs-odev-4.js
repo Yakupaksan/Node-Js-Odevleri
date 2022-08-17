@@ -29,5 +29,3 @@ const deleteFolder = () => {
         console.log('Dosya Silindi')
     })
 }
-
-

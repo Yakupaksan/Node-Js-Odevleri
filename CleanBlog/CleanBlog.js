@@ -25,7 +25,7 @@ app.use(express.json())
 
 //MIDDLEWARES
 app.get('/', async (req, res) => {
-    const addposts = await AddPost.find({})
+    const addposts = await AddPost.find({}).sort('-dateCreated')
     res.render('index', {
         addposts})
     });
@@ -40,7 +40,7 @@ app.get('/add_post', (req, res) => {
 
 app.get('/post', (req, res) => {
     res.render('post')
-})
+}) 
 
 
 app.post('/AddPost', async (req, res) => {
@@ -48,7 +48,13 @@ app.post('/AddPost', async (req, res) => {
     res.redirect('/')
   });
 
-
+  app.get("/addposts/:id", async (req, res) => {
+    const addposts = await AddPost.findById(req.params.id)
+    res.render('post', {
+        addposts
+    })
+  });
+ 
 
 
 const post = 3000;

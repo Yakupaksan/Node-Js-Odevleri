@@ -393,9 +393,12 @@ footer .copyright {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+
+
 .btn-primary {
   background-color: #0085A1;
   border-color: #0085A1;
+  
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {

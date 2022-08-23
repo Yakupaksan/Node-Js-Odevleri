@@ -9,7 +9,7 @@ const pageController = require("./controllers/pageController");
 const postController = require("./controllers/postController");
 const AddPost = require("./models/AddPost");
 
-mongoose.connect("mongodb://localhost/cleanblog-test-db", {
+mongoose.connect("mongodb+srv://yakupaksan:Y15752632y@cluster0.uuznzoj.mongodb.net/clearblog?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -48,7 +48,7 @@ app.put("/addposts/:id", postController.getUpdate);
 
 app.delete("/addposts/:id", postController.getDelete);
 
-const post = 3000;
+const post = process.env.PORT || 5000;
 app.listen(post, () => {
   console.log(`${post} numarali post basarili bir sekilde acildi. `);
 });

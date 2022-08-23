@@ -44,7 +44,7 @@
   </article>
   <br><br><br>
   <a href="/addposts/edit/<%= addposts._id %>" type="submit" class="btn btn-primary" >Edit</a>
-  <a href="/addposts/<%= addposts._id %>?_method=DELETE"  type="submit" class="btn btn-primary" >Delete</a>
+  <a href="/addposts/<%= addposts._id %>?_method=DELETE"  type="submit" class="btn btn-primary" onclick="return confirm('Emin misin?')" >Delete</a>
 
   <hr>
 

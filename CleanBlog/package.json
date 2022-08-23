@@ -4,8 +4,7 @@
   "description": "",
   "main": "CleanBlog",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon CleanBlog.js"
+    "start": "node CleanBlog.js"
   },
   "author": "Yakup",
   "license": "ISC",

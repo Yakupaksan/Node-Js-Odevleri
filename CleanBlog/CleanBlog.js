@@ -9,7 +9,7 @@ const pageController = require("./controllers/pageController");
 const postController = require("./controllers/postController");
 const AddPost = require("./models/AddPost");
 
-mongoose.connect("mongodb+srv://yakupaksan:Y15752632y@cluster0.uuznzoj.mongodb.net/clearblog?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://yakupaksan:Y15752632y@cluster0.uuznzoj.mongodb.net/clear-blog123?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
